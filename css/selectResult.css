@@ -1,0 +1,85 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	 width: 6.4rem; 
+	height: 100%;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	
+}
+
+
+/* 华为业务 */
+.jhSchool{
+	width:6.4rem;
+	height:1rem;
+	background-color:#393a3f;
+	display:flex;
+	justify-content:flex-start;
+	align-items:center;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index:10;/* 当前显示在最前面 */
+}
+.arrowDownFirst img{
+	width:0.2rem;
+	height:0.4rem;
+	margin-left:0.25rem;
+   /* margin-bottom:0.18rem;*/
+}
+p{
+	color:white;
+	font-size:0.35rem;
+	margin-left:2rem;
+}
+
+
+/* 视频详情 */
+
+.newPublicContent{
+	margin: 0.3rem 0.2rem 0 0.2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.newPublicContentItems1{
+	    width: 2.9rem;
+    	height: 2.8rem;
+    /* margin-right: 0.1rem; */
+   		 margin-bottom: 0.2rem;
+}
+.newPublicContentImg img{
+	width:2.9rem;
+	height:1.8rem;
+
+}
+.newPublicContentTitle{
+	margin-top:0.17rem;
+	font-size:0.2rem;
+}
+.newPublicDetail{
+	display:flex;
+	justify-content:flex-start;
+	align-items:center;
+	font-size:0.15rem;
+	margin-top:0.1rem;
+}
+.newPublicDetailImg img{
+	width: 0.16rem;
+	height: 0.16rem;
+	vertical-align:initial;
+}
+.newPublicDetailImg span{
+	color:#88ceed;
+}
+.newPublicCourseName{
+	border-left: 0.01rem solid black;
+    margin-left: 0.1rem;
+    padding-left: 0.1rem;
+    line-height: 0.2rem;
+}

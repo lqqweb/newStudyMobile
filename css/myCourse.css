@@ -1,0 +1,572 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	 width: 6.4rem; 
+	height: 100%;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	
+}
+
+
+/* 我的选课 */
+.jhSchool{
+	width:6.4rem;
+	height:1rem;
+	background-color:#393a3f;
+	/* display:flex;
+	justify-content:flex-start;
+	align-items:center; */
+	text-align:center;
+	line-height:1rem;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index:10;/* 当前显示在最前面 */
+}
+.arrowDown img{
+	width:0.2rem;
+	height:0.4rem;
+	margin-left:0.25rem;
+}
+.jhSchool p{
+	color:white;
+	font-size:0.35rem;
+	/* margin-left:2rem; */
+}
+
+/* 所选课程分类 */
+.courseInfo{
+	margin-left:0.2rem;
+	margin-top:0.2rem;
+	margin-right: 0.2rem;
+	display:flex;
+	justify-content:flex-start;
+	flex-wrap:nowrap;
+	/* align-items:center; */
+}
+.courseInfo p{
+	/* display:inline-block; */
+	font-size:0.23rem;
+}
+.aa{
+	margin-right:0.3rem;
+}
+.allSelectCourse{
+	width:0.5rem !important;
+}
+
+.courseInfo dl dd{
+	display: inline-block;
+    list-style: none;
+    font-size: 0.23rem;
+  /*   padding: 0.1rem; */
+  	padding-bottom:0.1rem;
+    width: 1rem;
+    height: 0.2rem;
+    /* border: 0.01rem solid red; */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 0.2rem;
+    margin-right:0.1rem;
+    padding-top:0.1rem;
+}
+
+.courseSelected{
+	background-color:white;
+	text-align:center;
+	color:#66c796;
+	border-bottom:0.01rem solid #66c796;
+}
+.courseMustSelect{
+	margin-left: 0.3rem;
+    margin-top: 0.1rem;
+    padding: 0 0.1rem 0.1rem 0.1rem;
+    font-size: 0.23rem;
+    width: 0.7rem;
+}
+#jump{
+	width:0.4rem;
+	height:0.3rem;
+
+}
+
+
+
+/* 查看更多 */
+
+.lookMore{
+	display:none;
+	position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 6.4rem;
+    z-index: 10000;
+}
+/* 模糊背景 */
+.bg{
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	/* background-color:#d9d9d9; */
+	background-color:blue;
+	/* rgba(217,217,217,0.x) */
+	z-index:-10;
+	opacity:0.1;
+}
+.courseInfo_hidden{
+	margin-left:0.2rem;
+	margin-top:0.2rem;
+	margin-right: 0.2rem;
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:nowrap;
+	align-items:center;
+}
+.courseInfo_hidden p{
+	display:inline-block;
+	font-size:0.23rem;
+}
+
+.courseInfo_hidden dl dd{
+	display:inline-block;
+	list-style:none;
+	font-size:0.23rem;
+	padding:0.1rem;
+}
+
+/* 我的选课 */
+.jhSchools{
+	width:6.4rem;
+	height:1rem;
+	background-color:#393a3f;
+	/* display:flex;
+	justify-content:flex-start;
+	align-items:center; */
+	text-align:center;
+}
+.arrowDown img{
+	width:0.2rem;
+	height:0.4rem;
+	margin-left:0.25rem;
+   
+}
+.jhSchools p{
+	color:white;
+	font-size:0.35rem;
+	/* margin-right:1.9rem; */
+	padding-top: 0.27rem;
+}
+
+/* 所选课程分类 */
+
+.aboveBg{
+	background-color: white;
+    margin-top: -0.2rem;
+    padding: 0 0.1rem 0.1rem 0;
+}
+.businessContent{
+	display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.23rem;
+    letter-spacing: 0.01rem;
+}
+.businessContent ul li{
+	list-style:none;
+	display:inline-block;
+	text-align:center;
+	padding:0.15rem;
+}
+
+.bottomLine{
+	color:green;
+	border-bottom:0.01rem solid green;
+}
+
+
+.backH img{
+	width:0.4rem;
+	height:0.3rem;
+}
+.cc{
+	position:absolute;
+	/* top:0; */
+	left:0;
+}
+
+
+
+
+
+/* 点击华为光网络显示的内容 */
+.selectCourseAll{
+	display:block;
+}
+.studyInfoContent{
+	display:none;
+}
+/* 课程类型 */
+.courseType{
+	display: flex;
+	justify-content:flex-start;
+	flex-wrap:nowrap;
+	align-items:center;
+    text-align: center;
+    font-size: 0.23rem;
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    margin-top:0.2rem;
+}
+/* 改动 */
+.courseType1,.courseType2,.courseType3,.courseType4,.courseType5{
+	border-radius:0.5rem;
+	padding:0.1rem 0.2rem 0.1rem 0.2rem;
+	background-color:#f0f6fa;
+}
+.courseType2,.courseType1,.courseType3,.courseType5{
+	margin-left:0.2rem;
+}
+.selectColor{
+	background-color: #66c796;
+    color: white;
+}
+
+/* 课程学习情况 */
+
+.studyInfo{
+	display:flex;
+	justify-content:flex-start;
+	align-items:center;
+	/* text-align:center; */
+	font-size:0.23rem;
+	margin-left: 0.2rem;
+    margin-right: 0.2rem;
+    margin-top:0.2rem;
+    padding-bottom:0.1rem;
+    padding-top: 0.1rem;
+    background: #f0f6fa;
+}
+.studyCourse{
+	/* flex:1.8; */
+	border-left: 0.05rem solid #419fed;
+    /* margin-left: 1rem; */
+    margin-left: 1.5rem;
+    line-height:0.25rem;
+    padding-left:0.1rem;
+	/* width:1.5rem; */
+	width:3.4rem;
+}
+.studyProf{
+	/* flex:1; */
+	border-left: 0.05rem solid #419fed;
+   /*  margin-left: 1rem; */
+    margin-left: 0.4rem;
+    line-height:0.25rem;
+	padding-left:0.1rem;
+	/* width:1.5rem; */
+	width:1.2rem;
+}
+.studyProgress{
+	/* flex:1; */
+	border-left: 0.05rem solid #419fed;
+    /* margin-left: 0.5rem; */
+    margin-left: 0.2rem;
+    line-height:0.25rem;
+	padding-left:0.1rem;
+	/* width:1.5rem; */
+	width:2rem;
+}
+
+.studyDetailInfo{
+	margin:0 0.2rem 0 0.2rem;
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:nowrap;
+	align-items:center;
+	border-bottom:0.01rem solid #cccccc;
+	/* padding:0.15rem 0 0.25rem 0; */
+	padding:0.15rem 0;
+	position:relative;
+	/* cursor:pointer; */
+}
+
+/* .studyDetailInfo:active{
+	background-color:#66c796;
+}
+.mustStudyDetailInfo:active{
+	background-color:#66c796;
+} */
+.clickColor{
+	background-color:#66c796;
+}
+
+.studyCourseName{
+	/* width:2.8rem; */
+	width:3.4rem;
+	position:relative;
+	display:block;
+	font-size:0.23rem;
+}
+.studyCourseNum{
+	text-align:center;
+	/* width:0.4rem; */
+	width:0.5rem;
+}
+
+.studyCourseTitle-1{
+	position:absolute;
+	/* left:0.4rem; */
+	left:0.5rem;
+	top:-0.1rem;
+	/* width:2.5rem; */
+	width:2.9rem;
+	height:0.6rem;
+	margin-bottom:0.05rem;
+	margin-top:0.05rem;
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.studyCourseName_hidden{
+	width:2.8rem;
+	position:relative;
+	display:none;
+	font-size:0.2rem;
+}
+.studyCourseNum_hidden{
+	text-align:center;
+	width:0.4rem;
+}
+.studyCourseTitle-1_hidden{
+	position:absolute;
+	left:0.4rem;
+	top:-0.09rem;
+	width:2.5rem;
+	height:0.6rem;
+	margin-bottom:0.05rem;
+	margin-top:0.05rem;
+}
+
+
+
+
+
+.studyCourseSource{
+	/* width:1.5rem; */
+	width:1.2rem;
+	font-size:0.23rem;
+}
+.studyProgressNum{
+	text-align:center;
+	font-size:0.2rem;
+}
+ progress{
+	width:1.2rem;
+}
+
+
+/* 点击必修课显示的页面 */
+
+.selectMustCourse{
+	display:none;
+}
+
+/* 课程方案 */
+.studyProject{
+	display:block;
+}
+
+.mustStudyDetailInfo{
+	margin:0 0.2rem 0 0.2rem;
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:nowrap;
+	align-items:center;
+	border-bottom:0.01rem solid #cccccc;
+	padding:0.15rem 0 0.25rem 0;
+}
+
+
+
+
+/* 点击相应的课程方案，显示对应的课程内容 */
+.studyProjectContent{
+	display:none;
+}
+.backStudyProject{
+	margin-left: 4.5rem;
+    font-size: 0.2rem;
+    border-radius: 0.5rem;
+    padding: 0.1rem 0.2rem;
+    background: #66c796;
+    width: 1.3rem;
+    color: white;
+}
+
+
+
+
+
+/*底部*/
+.bottoms{
+	width: 6.4rem;
+	height: 0.95rem;
+	background-color: #f6f6f6;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:nowrap;
+	align-items:center;
+}
+.bottomsItems1,.bottomsItems2,.bottomsItems3,.bottomsItems4{
+    text-align: center;
+}
+.bottomsItems1-img1{
+	width:0.35rem;
+	height:0.32rem;
+}
+.bottomsItems1-img2{
+	width:0.27rem;
+	height:0.32rem;
+}
+.bottomsItems1-img3{
+	width:0.28rem;
+	height:0.32rem;
+}
+.bottomsItems1-img4{
+	width:0.32rem;
+	height:0.32rem;
+}
+.bottomsTitle1,.bottomsTitle2,.bottomsTitle3,.bottomsTitle4{
+	font-size:0.1rem;
+}
+.bottomsTitle2{
+	color:#3f9dec;
+}
+
+
+/* 新增删除已选课程弹框 */
+.deleteContent{
+	display:none;
+	position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 6.4rem;
+    z-index: 10000;
+}
+/* 模糊背景 */
+.deleteBg{
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	/* background-color:#d9d9d9; */
+	background-color:blue;
+	/* rgba(217,217,217,0.x) */
+	z-index:-10;
+	opacity:0.1;
+}
+.deleteBtnList{
+	background: white;
+    width: 5rem;
+    height: 2.5rem;
+    text-align: center;
+    line-height: 1rem;
+    /* margin-top: 2rem; */
+    margin: 4rem auto;
+    border-radius:0.2rem;
+}
+.deleTip{
+	font-size:0.3rem;
+	padding-top:0.25rem;
+}
+.deleteBtnList span{
+	 border-radius: 0.1rem;
+    display: inline-block;
+    width: 1rem;
+    /* border: 0.01rem solid red; */
+    height: 0.5rem;
+    line-height: 0.5rem;
+    margin-top: 0.25rem;
+    color:white;
+}
+.cancleDel{
+	background:#66c796;
+}
+.sureDel{
+	background:red;
+}
+
+
+/* 改动 */
+.studyDetailInfoType{
+	margin:0 0.2rem 0 0.2rem;
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:nowrap;
+	align-items:center;
+	border-bottom:0.01rem solid #cccccc;
+	/* padding:0.15rem 0 0.25rem 0; */
+	padding:0.15rem 0;
+	position:relative;
+}
+
+/* 点击学习地图显示的页面 */
+
+
+
+/* 点击必修课显示的页面 */
+
+.studyMap{
+	display:block;
+}
+
+/* 课程方案 */
+.studyMapProject{
+	display:block;
+}
+
+.studyMapDetailInfo{
+	margin:0 0.2rem 0 0.2rem;
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:nowrap;
+	align-items:center;
+	border-bottom:0.01rem solid #cccccc;
+	padding:0.15rem 0 0.25rem 0;
+}
+
+
+
+
+/* 点击相应的学习地图，显示对应的学习地图内容 */
+.studyMapDetailContent{
+	display:none;
+}
+.backStudyMap{
+	margin-left: 4.5rem;
+    font-size: 0.2rem;
+    border-radius: 0.5rem;
+    padding: 0.1rem 0.2rem;
+    background: #66c796;
+    width: 1.3rem;
+    color: white;
+}
+
+/* 点击推荐显示的内容 */
+.recommendCourse{
+	display:none;
+}
+

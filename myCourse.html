@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的选课</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/myCourse.css">
+	<script src="js/common.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/myCourse.js"></script>
+</head>
+<body>
+	<div class="jhSchool">
+		<!-- <div class="arrowDown">
+			<img src="images/arrow-down.png" alt="">
+		</div> -->
+		<p>我的选课</p>
+		
+	</div>
+
+	<!-- 所选课程分类 -->
+	<div class="courseInfo">
+		<!-- <p>所有</p> -->
+		<div class="aa">
+			<dl>
+				<dd class="allSelectCourse courseSelected">所有</dd>
+				<dd >
+					华为光网路
+				</dd>
+				<dd>京东方大是梵</dd>
+				<dd>开发抖擞胜上</dd>
+				<dd>积分is功夫</dd>
+				
+			</dl>
+			
+		</div>
+		<div class="bb">
+			<img id="jump" src="images/upArrow.png" alt="">
+		</div>
+	</div>
+	<!-- <div class="courseMustSelect ">必修课</div> -->
+
+	<!-- 点击下拉箭头，查看更多所有课程详细分类的内容 -->
+
+	<div class="lookMore">
+
+		<div class="bg"></div>
+
+			<div class="cc">
+				
+
+				<!-- 我的选课 -->
+				<div class="jhSchools">
+					<!-- <div class="arrowDown">
+						<img src="images/arrow-down.png" alt="">
+					</div> -->
+					<p>我的选课</p>
+					
+				</div>
+
+				<!-- 所选课程分类 -->
+				<div class="aboveBg">
+					
+				
+				<div class="courseInfo_hidden">
+					<div class="aa">
+						<dl>
+							<!-- <p>所有</p> -->
+							<dd class="courseSelected">所有</dd>
+							<dd >
+								华为光网路
+							</dd>
+							<dd>京东方大是</dd>
+							<dd>开发抖擞胜</dd>
+							<dd>积分is</dd>
+							<dd>京东方大是</dd>
+							<dd>京东方大是</dd>
+							<dd>京东方大是</dd>
+							<dd>开发抖擞胜</dd>
+							<dd>京东方大是</dd>
+							<dd>开发抖擞胜</dd>
+							<dd>京东方大是</dd>
+							<dd>开发抖擞胜</dd>
+						</dl>
+						
+					</div>
+					<div class="backH">
+						<img src="images/downArrow.png" alt="">
+					</div>
+				</div>
+
+			</div>
+
+
+		</div>
+
+</div>
+
+
+
+	<!-- 点击华为光网络显示的内容 -->
+	<div class="selectCourseAll">
+	<!-- 课程类型 -->
+		<div class="courseType">
+			<!-- 2018-8-3调整必须课程展示位置 -->
+			<div class="courseType4 selectColor" >学习地图</div>
+			
+			<div class="courseType3  ">必修</div>
+			
+			<div class="courseType1">选修</div>
+
+			<div class="courseType5">推荐</div>
+
+			
+			<div class="courseType2">
+				已学
+			</div>
+			
+		</div>
+
+
+		<!-- 课程学习情况 -->
+		<div class="studyInfoContent">
+			<div class="studyInfo">
+				<div class="studyCourse">课程</div>
+				<div class="studyProf">专业</div>
+				<div class="studyProgress">学习进度</div>
+			</div>
+
+
+			<!-- 新增必须课图片 -->
+			<!-- <div class="studyDetailInfo">
+				<div class="studyCourseName">
+					<p class="studyCourseNum"><span>1</span>.</p>
+					<p class="studyCourseTitle-1">
+					<span><img src="images/must.png" alt=""></span><span>EXCEL应用技巧-文本技巧大是大非</span>
+					</p>
+				</div>
+				<div class="studyCourseSource">华为光网络</div>
+				<div class="studyCourseProgressInfo">
+					<div class="studyProgressNum">已学<span>80</span>%</div>
+					<progress max="100" value="80"></progress>
+				</div>
+			</div> -->
+
+				<!-- 原有课程列表 -->
+			<div class="studyDetailInfo">
+
+				<div class="studyCourseName">
+					<p class="studyCourseNum"><span>2</span>.</p>
+					<p class="studyCourseTitle-1">
+						EXCEL应用技巧-文本技巧大是大非
+					</p>
+				</div>
+
+				<!-- <div class="studyCourseName_hidden">
+					<p class="studyCourseNum_hidden"><span>10</span>.</p>
+					<p class="studyCourseTitle-1_hidden">EXCEL应用技巧-文本技巧大是大非</p>
+				</div> -->
+
+				<div class="studyCourseSource">华为光网络</div>
+				<div class="studyCourseProgressInfo">
+					<div class="studyProgressNum">已学<span>80</span>%</div>
+					<progress max="100" value="80"></progress>
+				
+				</div>
+				<!-- <div class="hiddeDelete" id="hiddeValue1" style="font-size: 40px;margin: 0 auto;text-align: center; width: 100px;height: 50px;background: red;display:none;position: absolute;top:0.8rem">删除</div> -->
+			</div>
+
+			<div class="studyDetailInfo">
+
+				<div class="studyCourseName">
+					<p class="studyCourseNum"><span>3</span>.</p>
+					<p class="studyCourseTitle-1">
+						EXCEL应用技巧-文本技巧大是大非
+					</p>
+				</div>
+
+				<!-- <div class="studyCourseName_hidden">
+					<p class="studyCourseNum_hidden"><span>10</span>.</p>
+					<p class="studyCourseTitle-1_hidden">EXCEL应用技巧-文本技巧大是大非</p>
+				</div> -->
+
+				<div class="studyCourseSource">华为光网络</div>
+				<div class="studyCourseProgressInfo">
+					<div class="studyProgressNum">已学<span>80</span>%</div>
+					<progress max="100" value="80"></progress>
+				
+				</div>
+				<!-- <div class="hiddeDelete" id="hiddeValue1" style="font-size: 40px;margin: 0 auto;text-align: center; width: 100px;height: 50px;background: red;display:none;position: absolute;top:0.8rem">删除</div> -->
+			</div>
+
+				<div class="studyDetailInfo">
+
+					<div class="studyCourseName">
+						<p class="studyCourseNum"><span>4</span>.</p>
+						<p class="studyCourseTitle-1">
+							EXCEL应用技巧-文本技巧大是大非
+						</p>
+					</div>
+
+					<!-- <div class="studyCourseName_hidden">
+						<p class="studyCourseNum_hidden"><span>10</span>.</p>
+						<p class="studyCourseTitle-1_hidden">EXCEL应用技巧-文本技巧大是大非</p>
+					</div> -->
+
+					<div class="studyCourseSource">华为光网络</div>
+					<div class="studyCourseProgressInfo">
+						<div class="studyProgressNum">已学<span>80</span>%</div>
+						<progress max="100" value="80"></progress>
+					
+					</div>
+				</div>
+
+				<div class="studyDetailInfo">
+					<div class="studyCourseName">
+						<p class="studyCourseNum"><span>5</span>.</p>
+						<p class="studyCourseTitle-1">
+							EXCEL应用技巧-文本技巧大是大非
+						</p>
+					</div>
+
+					<div class="studyCourseSource">华为光网络</div>
+					<div class="studyCourseProgressInfo">
+						<div class="studyProgressNum">已学<span>80</span>%</div>
+						<progress max="100" value="80"></progress>
+					
+					</div>
+				</div>
+
+			<!-- 10-18新增删除已选课程弹框 -->
+				<div class="deleteContent">
+					<div class="deleteBg"></div>
+					<div class="deleteBtnList">
+						<p class="deleTip">确定删除这门课程吗？</p>
+						<span class="cancleDel">取消</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="sureDel">删除</span>
+					</div>
+				</div>
+
+
+		</div>
+
+
+	</div>
+
+
+	<!-- 点击必修课显示的页面 -->
+	<div class="selectMustCourse">
+		<!-- 课程方案 -->
+		<div class="studyProject">
+			<div class="studyInfo">
+				<div class="studyCourse">课程方案</div>
+				<div class="studyProf">结束时间</div>
+				<div class="studyProgress">学习进度</div>
+			</div>
+
+
+
+			<div class="mustStudyDetailInfo">
+
+				<div class="studyCourseName">
+					<p class="studyCourseNum"><span>10</span>.</p>
+					<p class="studyCourseTitle-1">EXCEL应用技巧-文本技巧大是大非</p>
+				</div>
+
+				<div class="studyCourseSource">2019-12-30</div>
+				<div class="studyCourseProgressInfo">
+					<div class="studyProgressNum">已学<span>80</span>%</div>
+					<progress max="100" value="80"></progress>
+				
+				</div>
+			</div>
+
+			<div class="mustStudyDetailInfo">
+
+				<div class="studyCourseName">
+					<p class="studyCourseNum"><span>1</span>.</p>
+					<p class="studyCourseTitle-1">EXCEL应用技巧-文本技巧大是大非</p>
+				</div>
+
+				<div class="studyCourseSource">2019-12-30</div>
+				<div class="studyCourseProgressInfo">
+					<div class="studyProgressNum">已学<span>80</span>%</div>
+					<progress max="100" value="80"></progress>
+				
+				</div>
+			</div>
+
+		</div>
+
+	<!-- 点击相应的课程方案，显示对应的课程内容 -->
+
+		<div class="studyProjectContent">
+
+			<div class="backStudyProject">返回课程方案</div>
+			<div class="studyInfoContentMust">
+				<div class="studyInfo">
+					<div class="studyCourse">课程</div>
+					<div class="studyProf">专业</div>
+					<div class="studyProgress">学习进度</div>
+				</div>
+
+
+
+				<div class="studyDetailInfoType">
+
+					<div class="studyCourseName">
+						<p class="studyCourseNum"><span>10</span>.</p>
+						<p class="studyCourseTitle-1">
+							<span><img src="images/must.png" alt=""></span><span>EXCEL应用技巧-文本技巧大是大非</span>
+						</p>
+					</div>
+					
+					<div class="studyCourseSource">华为光网络</div>
+					<div class="studyCourseProgressInfo">
+						<div class="studyProgressNum">已学<span>60</span>%</div>
+						<progress max="100" value="60"></progress>
+					
+					</div>
+				</div>
+
+				<div class="studyDetailInfoType">
+
+					<div class="studyCourseName">
+						<p class="studyCourseNum"><span>1</span>.</p>
+						<p class="studyCourseTitle-1">解决无法解决方法粉底附近见附件</p>
+					</div>
+				
+					<div class="studyCourseSource">华为光网络</div>
+					<div class="studyCourseProgressInfo">
+						<div class="studyProgressNum">已学<span>60</span>%</div>
+						<progress max="100" value="60"></progress>
+					
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+
+		<!-- 点击学习地图显示的页面 -->
+	<div class="studyMap">
+		<!-- 课程方案 -->
+		<div class="studyMapProject">
+			<div class="studyInfo">
+				<div class="studyCourse">学习地图名称</div>
+				<div class="studyProf">阶段</div>
+				<div class="studyProgress">学习进度</div>
+			</div>
+
+
+
+			<div class="studyMapDetailInfo">
+
+				<div class="studyCourseName">
+					<p class="studyCourseNum"><span>10</span>.</p>
+					<p class="studyCourseTitle-1">EXCEL应用技巧-文本技巧大是大非</p>
+				</div>
+
+				<!-- <div class="studyCourseName_hidden">
+					<p class="studyCourseNum_hidden"><span>10</span>.</p>
+					<p class="studyCourseTitle-1_hidden">EXCEL应用技巧-文本技巧大是大非</p>
+				</div> -->
+
+				<div class="studyCourseSource">1阶段</div>
+				<div class="studyCourseProgressInfo">
+					<div class="studyProgressNum">已学<span>80</span>%</div>
+					<progress max="100" value="80"></progress>
+				
+				</div>
+			</div>
+
+			<div class="studyMapDetailInfo">
+
+				<div class="studyCourseName">
+					<p class="studyCourseNum"><span>1</span>.</p>
+					<p class="studyCourseTitle-1">EXCEL应用技巧-文本技巧大是大非</p>
+				</div>
+
+				<!-- <div class="studyCourseName_hidden">
+					<p class="studyCourseNum_hidden"><span>1</span>.</p>
+					<p class="studyCourseTitle-1_hidden">EXCEL应用技巧-文本技巧大是大非</p>
+				</div> -->
+
+				<div class="studyCourseSource">2阶段</div>
+				<div class="studyCourseProgressInfo">
+					<div class="studyProgressNum">已学<span>80</span>%</div>
+					<progress max="100" value="80"></progress>
+				
+				</div>
+			</div>
+
+		</div>
+
+	<!-- 点击相应的学习地图，显示对应的学习地图内容 -->
+
+		<div class="studyMapDetailContent">
+
+			<div class="backStudyMap">返回学习地图</div>
+			<div class="studyInfoContentMust">
+				<div class="studyInfo">
+					<div class="studyCourse">课程</div>
+					<div class="studyProf">专业</div>
+					<div class="studyProgress">学习进度</div>
+				</div>
+
+
+
+				<div class="studyDetailInfoType">
+
+					<div class="studyCourseName">
+						<p class="studyCourseNum"><span>10</span>.</p>
+						<p class="studyCourseTitle-1">
+							<span><img src="images/must.png" alt=""></span><span>EXCEL应用技巧-文本技巧大是大非</span>
+						</p>
+					</div>
+					<!-- <div class="studyCourseName_hidden">
+						<p class="studyCourseNum_hidden"><span>10</span>.</p>
+						<p class="studyCourseTitle-1_hidden">EXCEL应用技巧-文本技巧大是大非</p>
+					</div> -->
+					<div class="studyCourseSource">华为光网络</div>
+					<div class="studyCourseProgressInfo">
+						<div class="studyProgressNum">已学<span>60</span>%</div>
+						<progress max="100" value="60"></progress>
+					
+					</div>
+				</div>
+
+				<div class="studyDetailInfoType">
+
+					<div class="studyCourseName">
+						<p class="studyCourseNum"><span>1</span>.</p>
+						<p class="studyCourseTitle-1">解决无法解决方法粉底附近见附件</p>
+					</div>
+				<!-- 	<div class="studyCourseName_hidden">
+						<p class="studyCourseNum_hidden"><span>1</span>.</p>
+						<p class="studyCourseTitle-1_hidden">EXCEL应用技巧-文本技巧大是大非</p>
+					</div> -->
+					<div class="studyCourseSource">华为光网络</div>
+					<div class="studyCourseProgressInfo">
+						<div class="studyProgressNum">已学<span>60</span>%</div>
+						<progress max="100" value="60"></progress>
+					
+					</div>
+				</div>
+
+
+				
+
+
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- 点击推荐显示的内容 -->
+	<div class="recommendCourse">
+		这里是推荐课程
+	</div>
+
+	
+
+
+	
+
+<!-- 底部 -->
+		<div class="bottoms">
+			<div class="bottomsItems1">
+				<img class="bottomsItems1-img1" src="images/bottoms/1.png" alt="">
+				<div class="bottomsTitle1">首页</div>
+			</div>
+
+			<div class="bottomsItems2">
+				<img class="bottomsItems1-img2" src="images/bottoms/2-1.png" alt="">
+				<div class="bottomsTitle2">我的选课</div>
+			</div>
+
+			<div class="bottomsItems3">
+				<img class="bottomsItems1-img3" src="images/bottoms/3.png" alt="">
+				<div class="bottomsTitle3">考试</div>
+			</div>
+
+			<div class="bottomsItems4">
+				<img class="bottomsItems1-img4" src="images/bottoms/4.png" alt="">
+				<div class="bottomsTitle4">个人中心</div>
+			</div>
+		</div>
+<script>
+var timeOutEvent = 0;
+$(function(){
+	$('.studyDetailInfo').on({
+			touchstart:function(e){
+				console.log($(this));
+				var index = $(this).index();
+				// 将当前元素的索引作为参数进行传递
+				timeOutEvent = setTimeout("longPress("+index+")",500);
+				// e.preventDefault();
+			},
+			touchmove:function(){
+				clearTimeout(timeOutEvent);
+				timeOutEvent = 0;
+			},
+			touchend:function(){
+				//clearTimeout(timeOutEvent);
+				//if(timeOutEvent!=0){
+					// alert('你这是点击，不是长按');
+
+					//window.location.href="playCourse.html";
+				//}
+				//return false;
+			}
+		});
+});
+function longPress(t){
+		timeOutEvent = 0;
+		//if(confirm('您确定要删除？' + t)){
+			// 用传递过来的参数定位当前元素
+			//$('.studyDetailInfo').eq(t).remove();
+			//console.log('已删除');
+		//}
+		$(".deleteContent").css("display","block");
+		$('.sureDel').unbind('click');
+		$(".cancleDel").unbind('click');
+		$(".sureDel").click(function(){
+			// alert(t);
+			$('.studyDetailInfo').eq(t-1).remove();
+			$(".deleteContent").css("display","none");
+			return;
+		})
+
+		$(".cancleDel").click(function(){
+			// alert(t);
+			$(".deleteContent").css("display","none");
+			return;
+		})
+	}
+ 
+</script>
+
+</body>
+</html>

@@ -1,0 +1,495 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	 width: 6.4rem; 
+	height: 100%;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	
+}
+
+
+/* Excel应用技巧 */
+.jhSchool{
+	width:6.4rem;
+	height:1rem;
+	background-color:#393a3f;
+	display:flex;
+	justify-content:flex-start;
+	align-items:center;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index:10;/* 当前显示在最前面 */
+}
+.arrowDownToCourseDescription img{
+	width:0.2rem;
+	height:0.4rem;
+	margin-left:0.25rem;
+   /* margin-bottom:0.18rem;*/
+}
+.jhSchool p{
+	color:white;
+	font-size:0.35rem;
+	margin-left:1.7rem;
+}
+
+/* 课程播放视频 */
+.courseVideo video{
+	width:100%;
+	height:3.6rem;
+	/* object-fit: fill; */
+}
+
+.musicHidden{
+	display:none;
+    width:100%; 
+
+}
+.musicBg{
+	display:none;
+	height:2.858rem;
+    width:100%;
+}
+
+
+/* 课件信息及评论 */
+.cm{
+	display:flex;
+	text-align:center;
+	padding-top:0.2rem;
+}
+.cm div{
+	flex:1;
+}
+.courseInfo{
+	/* width: 100%;
+    height: 0.83rem; */
+    font-size: 0.29rem;
+    /* margin: 0 auto; */
+    text-align: center;
+    /* line-height: 0.83rem; */
+    /* letter-spacing: 0.1rem; */
+    margin: 0 0.8rem;
+    padding-bottom: 0.2rem;
+}
+.comment{
+	font-size:0.29rem;
+	padding-bottom: 0.2rem;
+    margin: 0 0.8rem;
+    border-bottom: 0.02px solid transparent;
+}
+.comment span{
+	font-size:0.25rem;
+}
+.addColor{
+	color:#66c796;
+	border-bottom:0.02rem solid #66c796;
+}
+
+/* 中间一小部分的蓝色背景 */
+.smallBg{
+	width:100%;
+	height:0.2rem;
+	background-color:#f0f6fa;
+}
+
+/* 课件信息 */
+.courseInfoContent{
+	display:block;
+}
+
+/* 课程目录 */
+
+.courseItem{
+	height:0.8rem;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	padding: 0 0.29rem 0 0.29rem;
+    border-bottom: 0.01rem solid gray;
+}
+.courseItemTitle{
+	font-size:0.25rem;
+	border-left:0.01rem solid #419fed;
+	line-height:0.25rem;
+	padding-left:0.1rem;
+}
+.courseLike{
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+}
+.likeImg img{
+	width:0.2rem;
+	height:0.2rem;
+
+}
+.likeCount{
+	font-size: 0.2rem;
+    margin-left: 0.1rem;
+}
+
+/* 课程目录详细信息 */
+
+/* 添加3中播放状态 */
+.addStudyProgress{
+	border-bottom:0.01rem solid gray;
+}
+.courseInfoItem{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	margin:0.2rem 0.29rem 0 0.29rem;
+	/* height:0.8rem; */
+	
+}
+.studyProgressedList,.studyProgressList,.studyProgressingList{
+	margin: 0.1rem 0.29rem 0.1rem 0.29rem;
+    width: 3.5rem;
+    text-align: center;
+}
+.studyProgressList span,.studyProgressedList span{
+	color:red;
+}
+
+.studyProgressingList span{
+	color:#0ec30e;
+}
+
+/* .courseInfoItem{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	margin:0 0.29rem 0 0.29rem;
+	height:0.8rem;
+	border-bottom:0.01rem solid gray;
+} */
+.courseInfoTitle{
+	font-size:0.25rem;
+	width:3.5rem;
+	position:relative;
+	display:block;
+}
+.courseInfoNum,.courseInfoNum_hidden{
+	text-align:center;
+	width:0.4rem;
+}
+.courseTitleLest{
+	position: absolute;
+    left: 0.4rem;
+    top: -0.25rem;
+    width: 3rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.courseInfoTitle_hidden{
+	font-size:0.2rem;
+	width:3.5rem;
+	position:relative;
+	margin-top:-0.2rem;
+	display:none;
+}
+.courseTitleAll{
+	position: absolute;
+    left: 0.4rem;
+    top: -0.03rem;
+    width: 3rem;
+    height: 0.8rem;
+}
+
+
+
+.linkImg{
+	/* display:flex;
+	justify-content:space-between;
+	align-items:center; */
+	width:2.5rem;
+	text-align:center;
+}
+.linkImg img{
+	display: inline-block;
+    margin-left: 0.45rem;
+}
+.moveImg{
+	width:0.3rem;
+	height:0.28rem;
+}
+
+.musicImg{
+	width:0.28rem;
+	height:0.28rem;
+}
+.pdfImg{
+	width:0.3rem;
+	height:0.3rem;
+}
+
+/* 底部缓存下载、添加课程 */
+
+.bottoms{
+	position:fixed;
+	left:0;
+	bottom: 0;
+	width:6.4rem;
+	height:0.85rem;
+	background-color:blue;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.downLoad{
+	width: 4.4rem;
+    height: 0.85rem;
+    background-color: #f6f6f6;
+    /* text-align: center; */
+    line-height: 0.85rem;
+    padding-left: 0.4rem;
+}
+.downLoad img{
+	width:0.28rem;
+	height:0.28rem;
+	vertical-align:initial;
+}
+.downLoad span{
+	font-size:0.25rem;
+}
+.addCourse{
+	width: 2rem;
+    height: 0.85rem;
+    background-color: #419fed;
+    line-height: 0.85rem;
+    text-align: center;
+    color:white;
+}
+.addCourse img{
+	width:0.2rem;
+	height:0.2rem;
+	vertical-align:initial;
+}
+.addCourse span{
+	font-size:0.2rem;
+}
+
+/* 评论 */
+.commentContent{
+	display:none;
+}
+/* 课件没有人评论 */
+.noComment{
+	text-align:center;
+	margin-top: 1rem;
+	display:block;
+}
+.noComment img{
+	width:2.5rem;
+}
+/* 课件已经有人评论 */
+.haveComment{
+	margin:0.2rem;
+	display:none;
+}
+/* 别人的评论 */
+.commenterContent{
+	display:flex;
+	justify-content:flex-start;
+	/* align-items:center; */
+	flex-wrap:nowrap;
+	margin-bottom: 0.2rem;
+	border-bottom:0.01rem solid #ededed;
+
+}
+.commenterContent img{
+	width:0.5rem;
+	height:0.5rem;
+	border-radius:0.5rem;
+}
+.commenterInfo{
+	margin-left:0.2rem;
+}
+.otherCommenter{
+	margin-bottom:0.2rem;
+}
+.myC{
+	/* margin-bottom:0.2rem; */
+	display:flex;
+
+}
+.myCCC{
+	margin-bottom:0.2rem;
+}
+.commenterN{
+	display:inline-block;
+	font-size: 0.2rem;
+    color: #666666;
+    width: 4.5rem;
+    /* border: 0.01rem solid red; */
+}
+.commenterQue{
+	display:inline-block;
+	border: 0.01rem solid #3f9dec;
+    padding: 0.02rem 0.15rem;
+    border-radius: 0.5rem;
+    color:#3f9dec;
+}
+.commenterSay,.commenterBack{
+	margin-top: 0.15rem;
+    border-bottom: 0.01rem solid #ededed;
+    padding-bottom: 0.2rem;
+    font-size:0.2rem;
+    /* margin-bottom: 0.2rem; */
+}
+.commenterBack span{
+	color:#f4915e;
+}
+/* 查看全部6条回复 */
+.checkHC{
+	display:block;
+	color:#999999;
+	margin-bottom:0.2rem;
+	font-size:0.17rem;
+}
+
+/* 自己的评论 */
+.myComment{
+	font-size:0.2rem;
+	color:#666666;
+}
+.del{
+	color:#f07999;
+}
+
+
+
+/* 点击查看全部回复显示的内容 */
+.hiddenComment{
+	/* position:fixed; */
+	position:absolute;
+	top:1rem;
+	left:0;
+	bottom:0;
+	background-color:white;
+
+	width:6.4rem;
+	height:150rem;
+	display:none;
+}
+
+.detailC{
+	background-color:#f0f6fa;
+}
+.dc{
+	display:inline-block;
+	padding:0.12rem 0 0.12rem 0.3rem;
+	font-size:0.18rem;
+}
+.closeDetail{
+	margin-left:5.1rem;
+	vertical-align:middle;
+	width:0.18rem;
+	height:0.18rem;
+}
+.relativeB{
+	margin-bottom: 0.25rem;
+	font-size: 0.2rem;
+	color:#999999;
+}
+.commenterSay_D,.commenterBack_D{
+	margin-top: 0.15rem;
+    /* border-bottom: 0.01rem solid #ededed; */
+    padding-bottom: 0.2rem;
+    font-size:0.2rem;
+    /* margin-bottom: 0.2rem; */
+}
+.commenterBack_D span{
+	color:#f4915e;
+}
+
+
+/* 底部发表文字框 */
+.deliverComment{
+	position:fixed;
+	left:0;
+	bottom:0;
+
+	border-top: 0.02rem solid #e6e6e6;
+    padding-top: 0.15rem;
+    padding-bottom: 0.15rem;
+    width:6.4rem;
+    background:white;
+}
+.deliverCommentContent{
+	width: 5.2rem;
+    border: 0.01rem solid #e6e6e6;
+    border-radius: 0.1rem;
+    height: 0.55rem;
+    margin-left:0.15rem;
+}
+.changeImg_1{
+	margin-left: 0.2rem;
+    width: 0.35rem;
+    vertical-align:middle;
+    margin-top: -0.1rem;
+}
+
+
+/* 删除自己的评论 */
+.deleteMyComment{
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:6.4rem;
+	z-index:10000;
+
+	display:none;
+
+}
+.deleteBg{
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	background-color:#d9d9d9;
+	z-index:-10;
+	opacity:0.4;
+	width:6.4rem;
+}
+.deleteTitle{
+	background: white;
+    margin: 0 auto;
+    text-align: center;
+    width: 4.5rem;
+    height: 2.6rem;
+    /* vertical-align: middle; */
+    margin-top: 3.5rem;
+    border-radius:0.1rem;
+}
+.deleCom{
+	padding-top: 0.4rem;
+    font-size: 0.25rem;
+    letter-spacing: 0.05rem;
+}
+.sureDele{
+	margin-top: 0.35rem;
+    font-size: 0.25rem;
+    letter-spacing: 0.01rem;
+}
+.isDelete{
+	display: flex;
+    margin-top: 0.45rem;
+    font-size: 0.25rem;
+    border-top: 0.01rem solid #e6e6e6;
+    padding-top: 0.2rem;
+}
+.deleteY,.cancleD{
+	flex:1;
+	color:#68a4ff;
+}

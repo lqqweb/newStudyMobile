@@ -1,0 +1,243 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	 width: 6.4rem; 
+	height: 100%;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	
+}
+
+
+/* 华为业务 */
+.jhSchool{
+	width:6.4rem;
+	height:1rem;
+	background-color:#393a3f;
+	display:flex;
+	justify-content:flex-start;
+	align-items:center;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index:10;/* 当前显示在最前面 */
+}
+.arrowDownFirst img{
+	width:0.2rem;
+	height:0.4rem;
+	margin-left:0.25rem;
+   /* margin-bottom:0.18rem;*/
+}
+p{
+	color:white;
+	font-size:0.4rem;
+	margin-left:2rem;
+}
+
+/* 考试专业、杭州学习调查、华为光网络 */
+.businessContent{
+	display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.23rem;
+    letter-spacing: 0.01rem;
+}
+.businessContent ul{
+	margin-left:0.1rem;
+}
+.businessContent ul li{
+	list-style:none;
+	display:inline-block;
+	text-align:center;
+	padding:0.15rem;
+}
+
+.bottomLine{
+	border-bottom:0.01rem solid green;
+}
+
+/* 全部、推荐视频、必修课程等 */
+
+.listItem{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	padding: 0.2rem;
+	border-bottom:0.01rem solid gray;
+	font-size:0.23rem;
+}
+.listItem1{
+	background-color:#f0f6fa;
+	/* border:0.01rem solid blue; */
+	border:0.01rem solid white;
+	border-radius:0.5rem;
+	padding:0.1rem 0.2rem 0.1rem 0.2rem;
+}
+.listItem img{
+	width:0.4rem;
+	height:0.3rem;
+
+}
+
+
+/* 视频详情 */
+
+.newPublicContent{
+	margin: 0.3rem 0.2rem 0 0.2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.newPublicContentItems1{
+	    width: 2.9rem;
+    	height: 2.8rem;
+    /* margin-right: 0.1rem; */
+   		 margin-bottom: 0.2rem;
+}
+.newPublicContentImg img{
+	width:2.9rem;
+	height:1.8rem;
+
+}
+.newPublicContentTitle{
+	margin-top:0.17rem;
+	font-size:0.2rem;
+}
+.newPublicDetail{
+	display:flex;
+	justify-content:flex-start;
+	align-items:center;
+	font-size:0.15rem;
+	margin-top:0.1rem;
+}
+.newPublicDetailImg img{
+	width: 0.16rem;
+	height: 0.16rem;
+	vertical-align:initial;
+}
+.newPublicDetailImg span{
+	color:#88ceed;
+}
+.newPublicCourseName{
+	border-left: 0.01rem solid black;
+    margin-left: 0.1rem;
+    padding-left: 0.1rem;
+    line-height: 0.2rem;
+}
+
+
+
+/* 查看更多 */
+
+.lookMore{
+	display:none;
+	position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 6.4rem;
+    z-index: 10000;
+}
+/* 模糊背景 */
+.bg{
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	/* background-color:#d9d9d9; */
+	background-color:blue;
+	/* rgba(217,217,217,0.x) */
+	z-index:-10;
+	opacity:0.1;
+}
+
+/* 华为业务 */
+.jhSchools{
+	width:6.4rem;
+	height:1rem;
+	background-color:#393a3f;
+	/* display:flex;
+	justify-content:flex-start;
+	align-items:center; */
+	text-align:center;
+}
+.arrowDown img{
+	width:0.2rem;
+	height:0.4rem;
+	margin-left:0.25rem;
+   
+}
+.jhSchools p{
+	color:white;
+	font-size:0.4rem;
+	margin-right:1.9rem;
+	padding-top: 0.22rem;
+}
+
+/* 考试专业、杭州学习调查、华为光网络 */
+
+.aboveBg{
+	background-color:white;
+}
+.businessContent{
+	display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.23rem;
+    letter-spacing: 0.01rem;
+}
+.businessContent ul li{
+	list-style:none;
+	display:inline-block;
+	text-align:center;
+	padding:0.15rem;
+}
+
+.bottomLine{
+	color:green;
+	border-bottom:0.01rem solid green;
+}
+
+/* 全部、推荐视频、必修课程等 */
+
+.listItem2{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	padding: 0.2rem;
+	border-bottom:0.01rem solid gray;
+	font-size:0.23rem;
+	
+}
+.listItemDetail2{
+	display:flex;
+	justify-content:flex-start;
+	flex-wrap:wrap;
+	align-items:center;
+	width: 5.5rem;
+}
+.listItem3{
+	background-color:#f0f6fa;
+	border:0.01rem solid blue;
+	border:0.01rem solid white;
+	border-radius:0.5rem;
+	padding:0.1rem 0.2rem 0.1rem 0.2rem;
+	margin-right: 0.15rem;
+	margin-bottom:0.25rem;
+}
+
+.backH img{
+	width:0.4rem;
+	height:0.3rem;
+}
+.cc{
+	position:absolute;
+	/* top:0; */
+	left:0;
+}
+

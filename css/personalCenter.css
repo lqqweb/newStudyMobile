@@ -1,0 +1,296 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	 width: 6.4rem; 
+	height: 100%;
+	/* padding-top: 1rem; */
+	padding-bottom: 1rem;
+	
+}
+/* 顶部图片背景 */
+.bg{
+	width: 6.4rem;
+    height: 2.8rem;
+    
+}
+.bgImg img{
+	width:6.4rem;
+	height:2.6rem;
+	z-index:-10;
+	opacity:0.9;
+}
+.topContent{
+	position:absolute;
+	left:0.5rem;
+	top:0.6rem;
+	display:flex;
+    justify-content:space-around;
+    flex-wrap:nowrap;
+    align-items:center;
+    font-size:0.25rem;
+    font-weight:500;
+}
+.studentImg{
+	width: 1.4rem;
+    height: 1.4rem;
+    /* border: 0.01rem solid red; */
+    border-radius: 1.4rem;
+    position: relative;
+    background-color: #99c7ff;
+}
+.studentImg img{
+	width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 1.3rem;
+    position: absolute;
+    top: 0.05rem;
+    left: 0.05rem;
+}
+.studentImg p{
+	text-align: center;
+    background-color:#fcb404;
+    position: absolute;
+    left: -0.15rem;
+    top: 1.2rem;
+    width: 1.6rem;
+    height: 0.5rem;
+    font-size: 0.3rem;
+    color: white;
+    letter-spacing: 0.01rem;
+    line-height: 0.5rem;
+}
+.studentInfo{
+	color:white;
+	margin-left:-0.2rem;
+}
+.studentDetailInfo{
+	margin-bottom:0.1rem;
+}
+.studentName{
+	margin-left: 0.5rem;
+    font-size: 0.3rem;
+    margin-bottom: 0.1rem;
+    letter-spacing:0.03rem;
+}
+.studentNum{
+	font-size:0.25rem;
+	margin-left:0.2rem;
+	letter-spacing:0.03rem;
+}
+.studentAddres,.scoreAll,.integralAll{
+	margin-left:0.48rem;
+	font-size:0.25rem;
+	letter-spacing:0.03rem;
+	margin-bottom:0.01rem;
+}
+
+/* 我的提问及我的评论 */
+.ques{
+	display:flex;
+	padding-bottom: 0.2rem;
+    border-bottom: 0.03rem solid #ebebeb;
+    margin-bottom:0.25rem;
+}
+.ques a{
+	flex:1;
+	text-align:center;
+	
+	font-size:0.26rem;
+}
+.myQuestion{
+	border-right: 0.03rem solid #ebebeb;
+	color:black;
+}
+.myComment{
+	color:black;
+}
+.ques span{
+	display: inline-block;
+    width: 0.26rem;
+    height: 0.26rem;
+    /* border: 1px solid red; */
+    border-radius: 0.26rem;
+    font-size: 0.18rem;
+    background: red;
+    color: white;
+    text-align: center;
+    line-height: 0.26rem;
+}
+/* 学时，学分，积分 */
+.studyInfo{
+    height: 1.2rem;
+    margin: 0.2rem 0.28rem 0 0.28rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    
+}
+.studyTime,.studyScore,.studyIntegral{
+	width:1.8rem;
+	height:1.2rem;
+	/* border:0.01rem solid blue; */
+	color:white;
+	border-radius:0.15rem;
+}
+.studyTime{
+	background-color:#8c97ff;
+}
+.studyScore{
+	background-color:#ffd05c;
+}
+
+.studyIntegral{
+	background-color:#81ceff;
+}
+.studyTime img,.studyScore img,.studyIntegral img{
+	width: 0.25rem;
+    height: 0.25rem;
+    margin: 0.1rem 0.1rem 0 0.1rem;
+}
+.studyTimeTitle,.studyScoreTitle,.studyIntegralTitle{
+	font-size: 0.23rem;
+    letter-spacing: 0.03rem;
+}
+.studyTimeNum span,.studyScoreNum span,.studyIntegralNum span{
+	font-size:0.3rem;
+}
+.studyTimeNum,.studyScoreNum,.studyIntegralNum{
+	font-size:0.24rem;
+	margin-left:0.4rem;
+}
+.studyTimeRank,.studyScoreRank,.studyIntegralRank{
+	font-size: 0.2rem;
+    margin-left: 0.4rem;
+}
+
+/* 公司排名 */
+
+.studyRank{
+	text-align: center;
+	margin-top:0.75rem;
+}
+.studyRank img{
+	width:3.15rem;
+	height:0.9rem;
+}
+
+/* 公司排名信息 */
+
+.studyRankInfo{
+	margin:0.22rem 0.24rem 0.24rem;
+	height:0.85rem;
+	position:relative;
+}
+.studyRankMedal{
+	margin:0.15rem 0;
+}
+.studyRankMedal img{
+	width:0.5rem;
+	margin-top:0.2rem;
+}
+.studyRankerImg img{
+	width:0.75rem;
+	height:0.75rem;
+	border-radius:0.75rem;
+}
+.studyRankerImg{
+	margin-left:-0.6rem;
+	position:absolute;
+	top:0.05rem;
+	left:1.2rem;
+}
+.studyRankerInfo{
+	margin-left:-0.5rem;
+	position: absolute;
+    top: 0.08rem;
+    left: 2rem;
+    width: 1.5rem;
+    height: 0.7rem;
+    /* border: 0.01rem solid cyan; */
+}
+.studyRankerInfo p{
+	font-size:0.25rem;
+	margin-bottom:0.04rem;
+}
+.studyRankerInfo img{
+	width:0.24rem;
+}
+.studyRankerInfo span{
+	color:#82ccfb;
+	font-size: 0.2rem;
+    letter-spacing: 0.01rem;
+}
+.studyRankerStudyTime{
+	position: absolute;
+    top: 0.1rem;
+    left: 3rem;
+    font-size: 0.25rem;
+    width: 1.4rem;
+    height: 0.6rem;
+    /* border: 0.01rem solid blue; */
+    text-align:center;
+}
+
+.studyRankerStudyScore{
+	position: absolute;
+    top: 0.1rem;
+    left: 4.5rem;
+    font-size: 0.25rem;
+    width: 1.4rem;
+    height: 0.6rem;
+    /* border: 0.01rem solid red; */
+    text-align:center;
+}
+
+
+/*底部*/
+.bottoms{
+	width: 6.4rem;
+	height: 0.95rem;
+	background-color: #f6f6f6;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:nowrap;
+	align-items:center;
+}
+.bottomsItems1,.bottomsItems2,.bottomsItems3,.bottomsItems4{
+    text-align: center;
+
+}
+.bottomsItems1-img1{
+	width:0.35rem;
+	height:0.32rem;
+}
+.bottomsItems1-img2{
+	width:0.27rem;
+	height:0.32rem;
+}
+.bottomsItems1-img3{
+	width:0.28rem;
+	height:0.32rem;
+}
+.bottomsItems1-img4{
+	width:0.32rem;
+	height:0.32rem;
+}
+.bottomsTitle1,.bottomsTitle2,.bottomsTitle3,.bottomsTitle4{
+	font-size:0.1rem;
+}
+.bottomsTitle4{
+	color:#3f9dec;
+}
+
+/*添加 数据加载中样式 */
+.dataLoading{
+	text-align:center;
+}
+.dataLoading img{
+	width:1.5rem;
+	height:1.5rem;
+}

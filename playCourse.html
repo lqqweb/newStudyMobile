@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>播放课程</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/playCourse.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/playCourse.js"></script>
+</head>
+<body>
+	
+
+	<!-- Excel应用技巧 -->
+	<div class="jhSchool">
+		<div class="arrowDownToCourseDescription">
+			<img src="images/arrow-down.png" alt="">
+		</div>
+		<p>Excel应用技巧</p>
+		
+	</div>
+
+
+	
+	<!-- 课程播放视频 -->
+
+	<div class="courseVideo">
+
+		<video class="videoPlay" controls="controls" preload >
+		 	 <source src="video/111.mp4" type="video/mp4" />
+			Your browser does not support the video tag.
+		</video>
+		<img class="musicBg" src="images/musicBg1.gif" alt="">
+		<audio controls="controls" class="musicHidden" preload poster="images/newPublic/newPublic02.png">
+			<source src="audio/music.mp3" >
+		</audio>
+	</div>
+
+	
+	<!-- 课件信息 及评论-->
+	<div class="cm">
+		<div class="courseInfo addColor">课件信息</div>
+		<div class="comment">评论&nbsp;(<span class="commentNum">1</span>)</div>
+	</div>
+	
+
+	<!-- 中间一小部分的蓝色背景 -->
+		
+		<div class="smallBg"></div>
+
+		<!-- 课件信息 -->
+		<div class="courseInfoContent">
+			<!-- 课程目录 -->
+			<div class="courseItem">
+				<div class="courseItemTitle">
+						课程目录
+				</div>
+				<div class="courseLike">
+					<div class="likeImg">
+						<img src="images/like.png" alt="">
+					</div>
+					<div class="likeCount">
+						点赞<span>154</span>
+					</div>
+				</div>
+			</div>
+
+			<!-- 课程目录详细信息 -->
+
+			<!-- 添加3种播放状态 -->
+			<div class="addStudyProgress">
+				<div class="courseInfoItem">
+				
+					<div class="courseInfoTitle">
+					<!-- 1.EXCEL应用技巧-文本技巧 -->
+						<p class="courseInfoNum"><span>1</span>.</p>
+						<p class="courseTitleLest">EXCEL应大锅饭桑公司用技巧-文本技巧</p>
+						
+					</div>
+					<div class="courseInfoTitle_hidden">
+						<p class="courseInfoNum_hidden"><span>1</span>.</p>
+						<p class="courseTitleAll">EXCEL应大锅饭桑公司用技巧-文本技巧</p>
+					</div>
+				
+					<div class="linkImg">
+					<!-- 点击视频播放，如果音乐正在播放，让音乐播放暂停 -->
+						<img class="moveImg"  src="images/move.png" alt="">
+						<!--点击音乐播放，如果视频正在播放，让视频播放暂停-->
+						<img class="musicImg" src="images/music.png" alt="">
+						<img class="pdfImg"  src="images/pdf.png" alt="">
+					</div>
+				</div>	
+				<!-- 2018-7-30添加3种学习状态 -->
+				<!-- <div class="studyProgressedList">
+						[&nbsp;<span>2017-8-6已完成学习</span>&nbsp;]
+				</div> -->
+				<div class="studyProgressList">
+						[&nbsp;<span>2017-8-6学习到26:46</span>&nbsp;]
+				</div>
+				<!-- <div class="studyProgressingList">
+						[&nbsp;<span>正在播放中...</span>&nbsp;]
+				</div> -->
+
+			</div>
+
+
+			<div class="addStudyProgress">
+				<div class="courseInfoItem">
+				
+					<div class="courseInfoTitle">
+					<!-- 1.EXCEL应用技巧-文本技巧 -->
+						<p class="courseInfoNum"><span>1</span>.</p>
+						<p class="courseTitleLest">EXCEL应大锅饭桑公司用技巧-文本技巧</p>
+						
+					</div>
+					<div class="courseInfoTitle_hidden">
+						<p class="courseInfoNum_hidden"><span>1</span>.</p>
+						<p class="courseTitleAll">EXCEL应大锅饭桑公司用技巧-文本技巧</p>
+					</div>
+				
+					<div class="linkImg">
+					<!-- 点击视频播放，如果音乐正在播放，让音乐播放暂停 -->
+						<img class="moveImg"  src="images/move.png" alt="">
+						<!--点击音乐播放，如果视频正在播放，让视频播放暂停-->
+						<img class="musicImg" src="images/music.png" alt="">
+						<img class="pdfImg"  src="images/pdf.png" alt="">
+					</div>
+				</div>	
+				<!-- 2018-7-30添加3种学习状态 -->
+				<div class="studyProgressedList">
+						[&nbsp;<span>2017-8-6已完成学习</span>&nbsp;]
+				</div>
+				<!-- <div class="studyProgressList">
+						[&nbsp;<span>2017-8-6学习到26:46</span>&nbsp;]
+				</div> -->
+				<!-- <div class="studyProgressingList">
+						[&nbsp;<span>正在播放中...</span>&nbsp;]
+				</div> -->
+
+			</div>
+
+			
+			<div class="addStudyProgress">
+				<div class="courseInfoItem">
+				
+					<div class="courseInfoTitle">
+					<!-- 1.EXCEL应用技巧-文本技巧 -->
+						<p class="courseInfoNum"><span>1</span>.</p>
+						<p class="courseTitleLest">EXCEL应大锅饭桑公司用技巧-文本技巧</p>
+						
+					</div>
+					<div class="courseInfoTitle_hidden">
+						<p class="courseInfoNum_hidden"><span>1</span>.</p>
+						<p class="courseTitleAll">EXCEL应大锅饭桑公司用技巧-文本技巧</p>
+					</div>
+				
+					<div class="linkImg">
+					<!-- 点击视频播放，如果音乐正在播放，让音乐播放暂停 -->
+						<img class="moveImg"  src="images/move.png" alt="">
+						<!--点击音乐播放，如果视频正在播放，让视频播放暂停-->
+						<img class="musicImg" src="images/music.png" alt="">
+						<img class="pdfImg"  src="images/pdf.png" alt="">
+					</div>
+				</div>	
+				<!-- 2018-7-30添加3种学习状态 -->
+				<!-- <div class="studyProgressedList">
+						[&nbsp;<span>2017-8-6已完成学习</span>&nbsp;]
+				</div> -->
+				<!-- <div class="studyProgressList">
+						[&nbsp;<span>2017-8-6学习到26:46</span>&nbsp;]
+				</div> -->
+				<div class="studyProgressingList">
+						[&nbsp;<span>正在播放中...</span>&nbsp;]
+				</div>
+
+			</div>
+
+
+			<div class="courseInfoItem">
+					<div class="courseInfoTitle">
+					<!-- 1.EXCEL应用技巧-文本技巧 -->
+						<p class="courseInfoNum"><span>10</span>.</p>
+						<p class="courseTitleLest">EXCEL应大锅饭桑公司用技巧-文本技巧</p>
+						
+					</div>
+					<div class="courseInfoTitle_hidden">
+						<p class="courseInfoNum_hidden"><span>10</span>.</p>
+						<p class="courseTitleAll">EXCEL应大锅饭桑公司用技巧-文本技巧</p>
+					</div>
+					<div class="linkImg">
+						<img class="moveImg" src="images/move.png" alt="">
+						<img class="musicImg" src="images/music.png" alt="">
+						<img class="pdfImg"  src="images/pdf.png" alt="">
+					</div>	
+			</div>
+
+			<div class="courseInfoItem">
+					<div class="courseInfoTitle">
+					<!-- 1.EXCEL应用技巧-文本技巧 -->
+						<p><span>1</span>.</p>
+						<p class="courseTitleLest">EXCEL应大锅</p>
+						
+					</div>
+					<div class="courseInfoTitle_hidden">
+						<p><span>1</span>.</p>
+						<p class="courseTitleAll">EXCEL应大锅</p>
+					</div>
+					<div class="linkImg">
+						<img class="moveImg" src="images/move.png" alt="">
+						<img class="musicImg" src="images/music.png" alt="">
+						<img class="pdfImg"  src="images/pdf.png" alt="">
+					</div>	
+			</div>
+
+
+
+
+			<!-- 底部缓存下载、添加课程 -->
+
+			<div class="bottoms">
+				<div class="downLoad">
+					<img src="images/download.png" alt="">
+					<span>缓存下载</span>
+				</div>
+				
+				<div class="addCourse">
+					<img src="images/add.png" alt="">
+					<span>添加课程</span>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 评论 -->
+		<div class="commentContent">
+			<!-- 课件还没有人评论 -->
+			<div class="noComment">
+				<img src="images/comment/noComment.png" alt="">
+			</div>
+
+			<!-- 课件已经有人评论 -->
+			<div class="haveComment">
+				<!-- 别人的评论 -->
+				<div class="commenterContent">
+					<img src="images/header.jpg" alt="">
+					<div class="commenterInfo">
+						<!-- 例如：蛋挞王的评论 -->
+						<div class="otherCommenter">
+							<div class="commenterName">
+								<p class="commenterN"><span><b>蛋挞王</b></span>&nbsp;&nbsp;<span>2018-02-27  08:21</span></p>
+								<p class="commenterQue">提问</p>
+							</div>
+							<div class="commenterSay">
+								<b>课程比较满意，学习选寻寻寻寻寻寻寻寻寻寻寻寻寻寻寻寻寻寻反反复复付付付付付付付付哈哈哈哈或或或或或或或或或或或或或或或</b>
+							</div>
+						</div>
+						<!-- 蛋挞王回复其他人对自己的评论 -->
+						<div class="otherCommenter">
+							<div class="commenterName">
+								<p class="commenterN"><span><b>蛋挞王</b></span>&nbsp;&nbsp;<span>2018-02-27  08:21</span></p>
+								<p class="commenterQue">提问</p>
+							</div>
+							<div class="commenterBack">
+								回复&nbsp;<span>@张三</span>:&nbsp;&nbsp;哈哈哈。
+							</div>
+						</div>
+						<!-- 其他人在蛋挞王的评论里，添加评论 -->
+						<div class="otherCommenter">
+							<div class="commenterName">
+								<p class="commenterN"><span><b>李四</b></span>&nbsp;&nbsp;<span>2018-02-27  08:21</span></p>
+								<p class="commenterQue">提问</p>
+							</div>
+							<div class="commenterSay">
+								<b>付付付付付付付付哈哈哈哈或或或或或或或或或或或或或或或</b>
+							</div>
+						
+						</div>
+
+						<!-- 查看全部6条回复 -->
+						<div class="commentHidden">
+							<p class="checkHC">查看全部<span>6</span>条回复></p>
+						</div>
+
+					</div>
+				</div>
+				<!-- 自己的评论 -->
+				<div class="commenterContent">
+					<div class="myC">
+						<img src="images/header.jpg" alt="">
+						<div class="commenterInfo">
+							<div class="myCCC">
+								<div class="commenterName">
+									<p class="myComment"><span><b>自己的评论</b></span>&nbsp;&nbsp;<span>2018-02-27  08:21</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="del">删除</span></p>
+									
+								</div>
+								<div class="commenterSay">
+									<b>课程比较满意，学习选寻寻寻寻寻寻寻寻寻寻寻寻寻寻寻寻寻寻反反复复付付付付付付付付哈哈哈哈或或或或或或或或或或或或或或或</b>
+								</div>
+							
+							</div>
+							<!-- 自己回复其他人对自己的评论 -->
+							<div class="otherCommenter">
+								<div class="commenterName">
+									<p class="commenterN"><span><b>蛋挞王</b></span>&nbsp;&nbsp;<span>2018-02-27  08:21</span></p>
+									<p class="commenterQue">提问</p>
+								</div>
+								<div class="commenterBack">
+									回复&nbsp;<span>@张三</span>:&nbsp;&nbsp;哈哈哈。
+								</div>
+							</div>
+							<!-- 其他人在我的评论里，添加评论 -->
+							<div class="otherCommenter">
+								<div class="commenterName">
+									<p class="commenterN"><span><b>李四</b></span>&nbsp;&nbsp;<span>2018-02-27  08:21</span></p>
+									<p class="commenterQue">提问</p>
+								</div>
+								<div class="commenterSay">
+									<b>付付付付付付付付哈哈哈哈或或或或或或或或或或或或或或或</b>
+								</div>
+							
+							</div>
+
+
+
+							
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- 底部发文字框 -->
+			<div class="deliverComment">
+				
+				<input class="deliverCommentContent" type="text" placeholder="发表评论">
+				<img class="changeImg_1" src="images/comment/send_1.png" alt="">
+				
+			</div>
+
+		</div>	
+
+			<!-- 点击查看全部回复显示的内容 -->
+			<div class="hiddenComment">
+				<div class="bg"></div>
+				<div class="detailC">
+					<p class="dc">详情</p>
+					<img class="closeDetail" src="images/comment/close.png" alt="">
+				</div>
+					
+				
+
+
+				<!-- 课件已经有人评论 -->
+				<div class="haveComment">
+					<!-- 别人的评论 -->
+					<div class="commenterContent">
+						<img src="images/header.jpg" alt="">
+						<div class="commenterInfo">
+							<!-- 例如：蛋挞王的评论 -->
+							<div class="otherCommenter">
+								<div class="commenterName">
+									<p class="commenterN"><span><b>蛋挞王</b></span>&nbsp;&nbsp;<span>2018-02-27  08:21</span></p>
+									<p class="commenterQue">提问</p>
+								</div>
+								<div class="commenterSay_D">
+									<b>课程比较满意，学习选寻寻寻寻寻寻寻寻寻寻寻寻寻寻寻寻寻寻反反复复付付付付付付付付哈哈哈哈或或或或或或或或或或或或或或或</b>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="relativeB">相关回复共6条</div>
+					<!-- 别人的评论 -->
+					<div class="commenterContent">
+						<img src="images/header.jpg" alt="">
+						<div class="commenterInfo">
+							<!-- 蛋挞王回复其他人对自己的评论 -->
+							<div class="otherCommenter">
+								<div class="commenterName">
+									<p class="commenterN"><span><b>蛋挞王</b></span>&nbsp;&nbsp;<span>2018-02-27  08:21</span></p>
+									<p class="commenterQue">提问</p>
+								</div>
+								<div class="commenterBack_D">
+									回复&nbsp;<span>@张丽莉</span>:&nbsp;&nbsp;嗯嗯嗯。
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+
+					<!-- 别人的评论 -->
+					<div class="commenterContent">
+						<img src="images/header.jpg" alt="">
+						<div class="commenterInfo">
+							<!-- 例如：张丽莉的评论 -->
+							<div class="otherCommenter">
+								<div class="commenterName">
+									<p class="commenterN"><span><b>张丽莉</b></span>&nbsp;&nbsp;<span>2018-02-27  08:21</span></p>
+									<p class="commenterQue">提问</p>
+								</div>
+								<div class="commenterSay_D">
+									<b>我也这么觉得，不过希望有更深入的讲解视频。</b>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					
+					<!-- 别人的评论 -->
+					<div class="commenterContent">
+						<img src="images/header.jpg" alt="">
+						<div class="commenterInfo">
+							<!-- 例如：周晨西的评论 -->
+							<div class="otherCommenter">
+								<div class="commenterName">
+									<p class="commenterN"><span><b>周晨西</b></span>&nbsp;&nbsp;<span>2018-02-27  08:21</span></p>
+									<p class="commenterQue">提问</p>
+								</div>
+								<div class="commenterSay_D">
+									<b>视频讲解的棒棒的！！</b>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+
+					<!-- 自己的评论 -->
+					<div class="commenterContent">
+						<div class="myC">
+							<img src="images/header.jpg" alt="">
+							<div class="commenterInfo">
+								
+									<div class="commenterName">
+										<p class="myComment"><span><b>自己的评论</b></span>&nbsp;&nbsp;<span>2018-02-27  08:21</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="del">删除</span></p>
+										
+									</div>
+									<div class="commenterSay_D">
+										<b>课程比较满意，学习选寻寻寻寻寻寻寻寻寻寻寻寻寻寻寻寻寻寻反反复复付付付付付付付付哈哈哈哈或或或或或或或或或或或或或或或</b>
+									</div>
+							
+							</div>
+						</div>
+					</div>
+
+					<!-- 别人的评论 -->
+					<div class="commenterContent">
+						<img src="images/header.jpg" alt="">
+						<div class="commenterInfo">
+							<!-- 兆利达回复其他人对自己的评论 -->
+							<div class="otherCommenter">
+								<div class="commenterName">
+									<p class="commenterN"><span><b>兆利达</b></span>&nbsp;&nbsp;<span>2018-02-27  08:21</span></p>
+									<p class="commenterQue">提问</p>
+								</div>
+								<div class="commenterBack_D">
+									回复&nbsp;<span>@余力</span>:&nbsp;&nbsp;嗯嗯嗯。
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+
+				</div>
+
+					<!-- 底部发文字框 -->
+				<div class="deliverComment">
+					
+					<input class="deliverCommentContent" type="text" placeholder="发表评论">
+					<img class="changeImg_1" id="changeImg_1" src="images/comment/send_1.png" alt="">
+					
+				</div>
+
+			</div>
+
+
+			<!-- 删除自己的评论 -->
+			<div class="deleteMyComment">
+				<div class="deleteBg"></div>
+				<div class="deleteTitle">
+					<p class="deleCom">删除评论</p>
+					<p class="sureDele">确定删除本条评论?</p>
+					<div class="isDelete">
+						<p class="deleteY">删除</p>
+						<p class="cancleD">取消</p>
+					</div>
+				</div>
+			</div>
+
+
+			
+			
+		
+
+
+
+	
+	
+</body>	
+</html>

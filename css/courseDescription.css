@@ -1,0 +1,144 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	 width: 6.4rem; 
+	height: 100%;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	
+}
+
+
+/* Excel应用技巧 */
+.jhSchool{
+	width:6.4rem;
+	height:1rem;
+	background-color:#393a3f;
+	display:flex;
+	justify-content:flex-start;
+	align-items:center;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index:10;/* 当前显示在最前面 */
+}
+.arrowDownToHw img{
+	width:0.2rem;
+	height:0.4rem;
+	margin-left:0.25rem;
+   /* margin-bottom:0.18rem;*/
+}
+p{
+	color:white;
+	font-size:0.4rem;
+	margin-left:1.7rem;
+}
+
+/* 课程封面图片 */
+.courseImg img{
+	width:100%;
+	height:3.6rem;
+}
+
+
+/* 播放次数及课程类型 */
+
+.playerContent{
+	padding: 0.28rem 0.25rem 0rem 0.25rem;
+    /* border-bottom: 0.01rem solid gray; */
+    padding-bottom: 0.3rem;
+    background: powderblue;
+}
+.playTitle{
+	font-size:0.3rem;
+}
+.newPublicDetail{
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	font-size:0.15rem;
+	margin-top:0.1rem;
+}
+.newPublicDetailLeft{
+	display:flex;
+	justify-content:flex-start;
+	align-items:center;
+}
+.newPublicDetailImg img{
+	width: 0.2rem;
+	height: 0.2rem;
+	vertical-align:sub;
+}
+.newPublicDetailImg span{
+	color:blue;
+	font-size:0.2rem;
+}
+.newPublicCourseName{
+	border-left: 0.01rem solid black;
+    margin-left: 0.15rem;
+    padding-left: 0.15rem;
+    line-height: 0.2rem;
+    font-size:0.2rem;
+    color:#999999;
+}
+.newPublicDetailRight{
+	display:flex;
+	justify-content:flex-start;
+	align-items:center;
+}
+.playerTimeImg img{
+	width: 0.2rem;
+	height: 0.2rem;
+	vertical-align:sub;
+}
+.playTime{
+	font-size:0.2rem;
+	margin-left: 0.1rem;
+}
+
+/* 讲解员 */
+
+.teacher{
+	padding:0.2rem 0.25rem 0.2rem 0.25rem;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.teacherName{
+	font-size:0.3rem;
+}
+.startStudy{
+	width: 1.5rem;
+    height: 0.45rem;
+    font-size: 0.25rem;
+    border: 0.01rem solid white;
+    background-color: #419fed;
+    border-radius: 0.5rem;
+    text-align: center;
+    line-height: 0.45rem;
+    color: white;
+}
+
+/* 中间一小部分的蓝色背景 */
+.smallBg{
+	width:100%;
+	height:0.2rem;
+	background-color:#f0f6fa;
+}
+
+/* 内容概述 */
+.contentSummary{
+	margin:0.42rem 0.25rem 0 0.25rem;
+}
+.contentTitle{
+	font-size:0.3rem;
+}
+.contentDetail{
+	font-size: 0.25rem;
+    color: #999999;
+    margin-top: 0.3rem;
+    line-height: 0.45rem;
+}
